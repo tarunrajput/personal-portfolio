@@ -3,7 +3,7 @@
 </div>
 <p align="center">
   <a href="https://app.netlify.com/sites/tarunrajput/deploys" target="_blank">
-    <img src="https://api.netlify.com/api/v1/badges/581574d2-6156-4518-8037-f709c6ab3300/deploy-status" alt="Netlify Status" />
+    <img src="https://api.netlify.com/api/v1/badges/3dd94285-850b-4579-8651-c9ebf699328b/deploy-status" alt="Netlify Status" />
   </a>
 </p>
 
