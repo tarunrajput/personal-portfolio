@@ -17,6 +17,3 @@ url: 'https://www.wipro.com/en-IN/'
 - Improved network availability & reliability by configuring dual uplink on network
  devices for redundancy.
 - Built a dashboard to monitor the health and resources consumption of servers.
-- Performed optimal provisioning, configuration and maintenance of servers.
-- Remediated Security risks by Installation of Security Patches/ Hotfixes released by
- OS/Application vendors across Servers.

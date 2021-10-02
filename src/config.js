@@ -11,12 +11,8 @@ module.exports = {
       url: 'https://www.linkedin.com/in/tarunchauhan98',
     },
     {
-      name: 'Instagram',
-      url: 'https://www.instagram.com/tarun.rajput98',
-    },
-    {
       name: 'Twitter',
-      url: 'https://twitter.com/notorious__kid',
+      url: 'https://twitter.com/milquebiscuit',
     },
   ],
 
