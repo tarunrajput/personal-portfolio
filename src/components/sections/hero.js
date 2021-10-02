@@ -58,7 +58,7 @@ const Hero = () => {
   const three = <h3 className="big-heading">I like to build and break Apps.</h3>;
   const four = (
     <p>
-      I'm a Technology enthusiast based in Delhi, IN specializing in building and designing high-quality systems and applications,
+      I'm a Software Enginner and Technology enthusiast specializing in building and designing high-quality systems and applications,
        and everything in between.
     </p>
   );

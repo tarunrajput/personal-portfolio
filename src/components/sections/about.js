@@ -10,8 +10,6 @@ const StyledAboutSection = styled.section`
 
   .inner {
     display: grid;
-    grid-template-columns: 3fr 2fr;
-    grid-gap: 50px;
 
     @media (max-width: 768px) {
       display: block;
@@ -132,8 +130,8 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'HTML & (S)CSS', 'React', 'Node.js', 'Express',
-                  'AWS', 'Google Cloud Platform', 'Python', 'Docker', 'Kubernetes'];
+  const skills = ['JavaScript (ES6+)', 'React', 'React Native', 'Node.js', 'Express',
+                  'TypeScript', 'MongoDB', 'AWS', 'Jenkins', 'Docker'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -142,16 +140,16 @@ const About = () => {
       <div className="inner">
         <StyledText>
           <div>
-            <p>👋 Hello! I'm Tarun, a Technology enthusiast based in Delhi, IN.</p>
+            <p>👋 Hello! I'm Tarun, a Software Engineer and Technology enthusiast based in Delhi, IN.</p>
 
             <p>
             I enjoy building and designing high-quality systems and applications, and everything in between.
             </p>
 
             <p>
-              Shortly after leaving{' '}
-              <a href="https://wipro.com" target="_blank">Wipro Limited</a>, where I used to work as a Data Center Administrator, I attended{' '}
-              <a href="http://bvicam.in" target="_blank">BVICAM</a> to pursue a Master's degree in Computer Applications (MCA).
+              Currently, I am working as a SDE at{' '}
+              <a href="https://technogramsolutions.com" target="_blank">Technogram Solutions</a>, where I focuses on building scalable and customised Travel software solutions 
+              for a variety of clients. I've also worked as as a Data Center Administrator at{' '}<a href="https://www.wipro.com/en-IN/'" target="_blank">Wipro Limited</a> in the past.
             </p>
 
             <p>Here are a few technologies I've been working with recently:</p>
@@ -162,11 +160,11 @@ const About = () => {
           </ul>
         </StyledText>
 
-        <StyledPic>
+        {/* <StyledPic>
           <div className="wrapper">
             <Img fluid={data.avatar.childImageSharp.fluid} alt="Avatar" className="img" />
           </div>
-        </StyledPic>
+        </StyledPic> */}
       </div>
     </StyledAboutSection>
   );
