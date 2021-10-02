@@ -8,7 +8,7 @@
 </p>
 
 ![demo](https://raw.githubusercontent.com/tarunrajput/personal-portfolio/main/src/images/demo.png)
-
+<p align="center"><em>Check it out at <a href="https://tarunrajput.netlify.app">tarunrajput.netlify.app</a>.</em></p>
 
 
 ## 🛠 Installation & Set Up

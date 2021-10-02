@@ -149,7 +149,7 @@ const About = () => {
             <p>
               Currently, I am working as a SDE at{' '}
               <a href="https://technogramsolutions.com" target="_blank">Technogram Solutions</a>, where I focuses on building scalable and customised Travel software solutions 
-              for a variety of clients. I've also worked as as a Data Center Administrator at{' '}<a href="https://www.wipro.com/en-IN/'" target="_blank">Wipro Limited</a> in the past.
+              for a variety of clients. I've also worked as a Data Center Administrator at{' '}<a href="https://www.wipro.com/en-IN/'" target="_blank">Wipro Limited</a> in the past.
             </p>
 
             <p>Here are a few technologies I've been working with recently:</p>
