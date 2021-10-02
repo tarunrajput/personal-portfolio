@@ -4,10 +4,10 @@ module.exports = {
   siteMetadata: {
     title: 'Tarun Chauhan',
     description:
-      'Tarun Chauhan is a Technology enthusiast based in Delhi, IN specializing in building and designing high-quality systems and applications, and everything in between.',
+      'Tarun Chauhan is a Software Engineer and Technology enthusiast specializing in building and designing high-quality systems and applications.',
     siteUrl: 'https://tarunrajput.netlify.app', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
-    twitterUsername: '@notorious__kid',
+    twitterUsername: '@milquebiscuit',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
