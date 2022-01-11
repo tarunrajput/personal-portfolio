@@ -1,7 +1,7 @@
 ---
 date: '2'
 title: 'MovieTime'
-cover: './movietime.png'
+cover: './movietime.jpg'
 github: 'https://github.com/tarunrajput/movietime'
 tech:
   - React Native
