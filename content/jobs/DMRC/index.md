@@ -1,11 +1,11 @@
 ---
 date: '2018-01-09'
-title: 'IT Trainee'
-company: 'Delhi Metro Rail Corporation'
+title: 'Software Development Intern'
+company: 'DMRC'
 location: 'Mayur Vihar, DEL'
 range: 'January 2018 - March 2018'
 url: 'http://www.delhimetrorail.com'
 ---
 
-- Built an Employee Management Web App using PHP and JS.
-- Troubleshooting and provided Technical support for day to day technical issues.
+- Worked on add-on UI features for DMRC's internal apps.
+- Refactored part of legacy code to use new industry standards.

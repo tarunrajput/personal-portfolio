@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link, useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { srConfig } from '@config';
@@ -201,12 +201,20 @@ const Projects = () => {
                         </div>
                         <div className="project-links">
                           {github && (
-                            <a href={github} aria-label="GitHub Link">
+                            <a
+                              href={github}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              aria-label="GitHub Link">
                               <Icon name="GitHub" />
                             </a>
                           )}
                           {external && (
-                            <a href={external} aria-label="External Link">
+                            <a
+                              href={external}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              aria-label="External Link">
                               <Icon name="External" />
                             </a>
                           )}

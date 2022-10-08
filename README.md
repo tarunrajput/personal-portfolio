@@ -8,8 +8,8 @@
 </p>
 
 ![demo](https://raw.githubusercontent.com/tarunrajput/personal-portfolio/main/src/images/demo.png)
-<p align="center"><em>Check it out at <a href="https://tarunrajput.netlify.app">tarunrajput.netlify.app</a>.</em></p>
 
+<p align="center"><em>Check it out at <a href="https://tarunrajput.me" target="_blank" rel="noopener noreferrer">tarunrajput.me</a>.</em></p>
 
 ## 🛠 Installation & Set Up
 

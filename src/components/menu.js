@@ -260,7 +260,11 @@ const Menu = () => {
               </ol>
             )}
 
-            <a href="/resume.pdf" className="resume-link">
+            <a
+              href="/tarun-chauhan-resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="resume-link">
               Resume
             </a>
           </nav>

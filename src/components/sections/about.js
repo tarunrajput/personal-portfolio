@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
+// import { useStaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 import { srConfig } from '@config';
 import sr from '@utils/sr';
@@ -43,86 +42,86 @@ const StyledText = styled.div`
     }
   }
 `;
-const StyledPic = styled.div`
-  position: relative;
-  max-width: 300px;
+// const StyledPic = styled.div`
+//   position: relative;
+//   max-width: 300px;
 
-  @media (max-width: 768px) {
-    margin: 50px auto 0;
-    width: 70%;
-  }
+//   @media (max-width: 768px) {
+//     margin: 50px auto 0;
+//     width: 70%;
+//   }
 
-  .wrapper {
-    ${({ theme }) => theme.mixins.boxShadow};
-    display: block;
-    position: relative;
-    width: 100%;
-    border-radius: var(--border-radius);
-    background-color: var(--green);
+//   .wrapper {
+//     ${({ theme }) => theme.mixins.boxShadow};
+//     display: block;
+//     position: relative;
+//     width: 100%;
+//     border-radius: var(--border-radius);
+//     background-color: var(--green);
 
-    &:hover,
-    &:focus {
-      background: transparent;
-      outline: 0;
+//     &:hover,
+//     &:focus {
+//       background: transparent;
+//       outline: 0;
 
-      &:after {
-        top: 15px;
-        left: 15px;
-      }
+//       &:after {
+//         top: 15px;
+//         left: 15px;
+//       }
 
-      .img {
-        filter: none;
-        mix-blend-mode: normal;
-      }
-    }
+//       .img {
+//         filter: none;
+//         mix-blend-mode: normal;
+//       }
+//     }
 
-    .img {
-      position: relative;
-      border-radius: var(--border-radius);
-      mix-blend-mode: multiply;
-      filter: grayscale(100%) contrast(1);
-      transition: var(--transition);
-    }
+//     .img {
+//       position: relative;
+//       border-radius: var(--border-radius);
+//       mix-blend-mode: multiply;
+//       filter: grayscale(100%) contrast(1);
+//       transition: var(--transition);
+//     }
 
-    &:before,
-    &:after {
-      content: '';
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      border-radius: var(--border-radius);
-      transition: var(--transition);
-    }
+//     &:before,
+//     &:after {
+//       content: '';
+//       display: block;
+//       position: absolute;
+//       width: 100%;
+//       height: 100%;
+//       border-radius: var(--border-radius);
+//       transition: var(--transition);
+//     }
 
-    &:before {
-      top: 0;
-      left: 0;
-      background-color: var(--navy);
-      mix-blend-mode: screen;
-    }
+//     &:before {
+//       top: 0;
+//       left: 0;
+//       background-color: var(--navy);
+//       mix-blend-mode: screen;
+//     }
 
-    &:after {
-      border: 2px solid var(--green);
-      top: 20px;
-      left: 20px;
-      z-index: -1;
-    }
-  }
-`;
+//     &:after {
+//       border: 2px solid var(--green);
+//       top: 20px;
+//       left: 20px;
+//       z-index: -1;
+//     }
+//   }
+// `;
 
 const About = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      avatar: file(sourceInstanceName: { eq: "images" }, relativePath: { eq: "me.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 500, traceSVG: { color: "#64ffda" }) {
-            ...GatsbyImageSharpFluid_withWebp_tracedSVG
-          }
-        }
-      }
-    }
-  `);
+  // const data = useStaticQuery(graphql`
+  //   query {
+  //     avatar: file(sourceInstanceName: { eq: "images" }, relativePath: { eq: "me.png" }) {
+  //       childImageSharp {
+  //         fluid(maxWidth: 500, traceSVG: { color: "#64ffda" }) {
+  //           ...GatsbyImageSharpFluid_withWebp_tracedSVG
+  //         }
+  //       }
+  //     }
+  //   }
+  // `);
 
   const revealContainer = useRef(null);
 
@@ -130,8 +129,20 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'React', 'React Native', 'Node.js', 'Express',
-                  'TypeScript', 'MongoDB', 'AWS', 'Jenkins', 'Docker'];
+  const skills = [
+    'JavaScript (ES6+)',
+    'React',
+    'React Native',
+    'Next.js',
+    'Express',
+    'Node.js',
+    'TypeScript',
+    'MongoDB',
+    'AWS',
+    'Jenkins',
+    'Docker',
+    'Elasticsearch',
+  ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -140,18 +151,22 @@ const About = () => {
       <div className="inner">
         <StyledText>
           <div>
-            <p>👋 Hello! I'm Tarun, a Software Engineer and Technology enthusiast based in Delhi, IN.</p>
-
-            <p>
-            I enjoy building and designing high-quality systems and applications, and everything in between.
-            </p>
-
+            <p>Hello! I'm Tarun and I enjoy building Apps for Web and Mobile.</p>
             <p>
               Currently, I am working as a SDE at{' '}
-              <a href="https://technogramsolutions.com" target="_blank">Technogram Solutions</a>, where I focuses on building scalable and customised Travel software solutions 
-              for a variety of clients. I've also worked as a Data Center Administrator at{' '}<a href="https://www.wipro.com/en-IN/'" target="_blank">Wipro Limited</a> in the past.
+              <a href="https://tripjack.com" target="_blank" rel="noopener noreferrer">
+                Tripjack
+              </a>
+              {' (formerly '}
+              <a
+                href="https://beta.technogramsolutions.com"
+                target="_blank"
+                rel="noopener noreferrer">
+                Technogram Solutons)
+              </a>
+              , where I focuses on building scalable and customised Travel software solutions for a
+              variety of clients.
             </p>
-
             <p>Here are a few technologies I've been working with recently:</p>
           </div>
 

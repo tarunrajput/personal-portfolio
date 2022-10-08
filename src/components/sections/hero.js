@@ -53,28 +53,32 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-  const one = <h1>Hi 👋, my name is</h1>;
+  const one = <h1>Hi, my name is</h1>;
   const two = <h2 className="big-heading">Tarun Chauhan.</h2>;
-  const three = <h3 className="big-heading">I like to build and break Apps.</h3>;
+  const three = <h3 className="big-heading">I build Apps for Mobile & Web.</h3>;
   const four = (
     <p>
-      I'm a Software Enginner and Technology enthusiast specializing in building and designing high-quality systems and applications,
-       and everything in between.
+      I'm a Frontend and Mobile Development Engineer and Open-Source enthusiast specializing in
+      building and designing high-quality systems and applications, and everything in between.
     </p>
   );
-  
+
   const five1 = (
     <a href={`mailto:${email}`} className="email-link">
       Get In Touch
     </a>
   );
   const five2 = (
-    <a href="/resume.pdf" className="resume-link">
+    <a
+      href="/tarun-chauhan-resume.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="resume-link">
       Resume
     </a>
   );
 
-  const five = [five1,five2];
+  const five = [five1, five2];
 
   const items = [one, two, three, four, five];
 
